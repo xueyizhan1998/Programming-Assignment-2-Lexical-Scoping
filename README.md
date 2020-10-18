@@ -51,26 +51,9 @@ cacheSolve<-function(x,...){
 }
 
 ### Testing
-A<-matrix(c(1,2,3,4,5,6,7,8,9),3,3)
-> A
-     [,1] [,2] [,3]
+A<-matrix(c(1:4),2,2)
+a <- makeCacheMatrix(A)
+cacheSolve(a)
 
-[1,]    1    4    7
-
-[2,]    2    5    8
-
-[3,]    3    6    9
-
-
-A' <- makeCacheMatrix(A)
-
-cacheSolve(A')
-
-[,1] [,2] [,3]
-
-[1,]    1    4    7
-
-[2,]    2    5    8
-
-[3,]    3    6    9
+the testing result is shown in the R file attached
 
